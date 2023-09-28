@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 4vh;
+}
+
+.header{
+    position:fixed;
+    top:0;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    background-color: black;
+    width: 100%;
+}
+
+.headLogo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 3vh;
+}
+
+.headLogo img{
+    height: 8vh;
+}
+
+.headTitle img{
+    height: 15vh;
+}
+
+.contentContainer{
+    margin-top: 225px;
+}
+
+.content{
+    height: 30vh;
+    width: 100%;
+}
+
+#contentOne #contentThree #contentFive{
+    background-color: black;
+}
+
+#contentTwo #contentFour{
+    background-color: white;
+}
