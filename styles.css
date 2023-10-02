@@ -3,33 +3,43 @@ body{
     color: white;
     text-align: center;
     font-size: 4vh;
+    margin: 0;
 }
 
 .header{
     position:fixed;
     top:0;
-    padding: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:center;
     align-content: center;
     background-color: black;
-    width: 100%;
+    width: 100vw;
 }
 
-.headLogo{
+.headTitle{
+    flex-grow: 1;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-content: center;
-    padding: 3vh;
-}
-
-.headLogo img{
-    height: 8vh;
+    margin-left: 80px;
 }
 
 .headTitle img{
     height: 15vh;
+}
+
+.headSocials{
+    padding: 0 40px;
+    
+}
+
+.headSocials ul{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    list-style: none;
+    padding: 10px;
 }
 
 .contentContainer{
@@ -37,14 +47,20 @@ body{
 }
 
 .content{
-    height: 30vh;
+    height: 90vh;
     width: 100%;
 }
 
-#contentOne #contentThree #contentFive{
+#contentOne, #contentThree, #contentFive{
     background-color: black;
 }
 
-#contentTwo #contentFour{
+#contentTwo, #contentFour{
     background-color: white;
+    color: black;
+}
+
+footer a{
+    color:white;
+    text-decoration: none;
 }
