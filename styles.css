@@ -1,4 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
+    display: block;
     background-color: black;
     color: white;
     text-align: center;
@@ -6,9 +13,12 @@ body{
     margin: 0;
 }
 
+.holder{
+    position: fixed;
+    top: 0;
+}
+
 .header{
-    position:fixed;
-    top:0;
     display: flex;
     flex-direction: row;
     justify-content:center;
@@ -17,12 +27,17 @@ body{
     width: 100vw;
 }
 
+.linkbar{
+    width: 100vw;
+    background-color: black;
+}
+
 .headTitle{
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 80px;
+    margin-left: 110px;
 }
 
 .headTitle img{
@@ -37,13 +52,19 @@ body{
 .headSocials ul{
     display: flex;
     flex-direction: column;
-    justify-self: center;
     list-style: none;
     padding: 10px;
 }
 
+.linkbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 3vh;
+}
+
 .contentContainer{
-    margin-top: 225px;
+    margin-top: 205px;
 }
 
 .content{
@@ -58,6 +79,19 @@ body{
 #contentTwo, #contentFour{
     background-color: white;
     color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background-color: black;
+    width: 100vw;
 }
 
 footer a{
