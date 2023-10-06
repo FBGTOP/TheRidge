@@ -21,8 +21,8 @@ body{
 .header{
     display: flex;
     flex-direction: row;
-    justify-content:center;
-    align-content: center;
+    justify-content: space-between;
+    align-items: center;
     background-color: black;
     width: 100vw;
     padding: 20px;
@@ -43,7 +43,6 @@ body{
     padding: 0 15px;
     
 }
-
 .headSocials ul{
     display: flex;
     flex-direction: column;
@@ -51,13 +50,12 @@ body{
     padding: 10px;
 }
 
-
 .contentContainer{
-    margin-top: 205px;
+    margin-top: 175px;
 }
 
 .content{
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
