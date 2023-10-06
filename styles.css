@@ -10,7 +10,7 @@ body{
     color: white;
     text-align: center;
     font-size: 4vh;
-    margin: 0;
+    font-family:  'Gill Sans', Impact, sans-serif;
 }
 
 .holder{
@@ -25,11 +25,7 @@ body{
     align-content: center;
     background-color: black;
     width: 100vw;
-}
-
-.linkbar{
-    width: 100vw;
-    background-color: black;
+    padding: 20px;
 }
 
 .headTitle{
@@ -37,15 +33,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 110px;
 }
 
 .headTitle img{
-    height: 15vh;
+    height: 12vh;
 }
 
 .headSocials{
-    padding: 0 40px;
+    padding: 0 15px;
     
 }
 
@@ -56,39 +51,25 @@ body{
     padding: 10px;
 }
 
-.linkbar ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    font-size: 3vh;
-}
 
 .contentContainer{
     margin-top: 205px;
 }
 
 .content{
-    height: 90vh;
+    height: 100vh;
     width: 100%;
-}
-
-#contentOne, #contentThree, #contentFive{
-    background-color: black;
-}
-
-#contentTwo, #contentFour{
-    background-color: white;
-    color: black;
 }
 
 a{
     text-decoration: none;
-    color: white
+    color: black;
 }
 
 footer{
     position: fixed;
     bottom: 0;
+    font-size: 3vh;
     text-align: center;
     background-color: black;
     width: 100vw;
@@ -98,3 +79,70 @@ footer a{
     color:white;
     text-decoration: none;
 }
+
+/* ========================================================================= */
+/* Styling for the nav button*/
+.menuBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5%;
+  color: #090909;
+  width: 2.5em;
+  height: 2.5em;
+  background:black;
+}
+
+.menuBtn span {
+    width: 30px;
+    height: 4px;
+    background: white;
+    border-radius: 100px;
+    transition: 0.3s ease;
+  }
+
+/* ========================================================================= */
+/* The side nav menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: black; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The nav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* Mouse over nav links, changes their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+ 
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
