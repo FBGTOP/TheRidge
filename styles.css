@@ -24,8 +24,7 @@ body{
 
 .header{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: black;
     width: 100vw;
@@ -37,16 +36,19 @@ body{
     height: auto;
 }
 
-.headSocials{
-    padding: 0 15px;
-    
+.headTitle{
+    flex: 1;    
 }
 
-.headSocials ul{
+.footSocials{
+    padding: 0 20px;
+    justify-self: flex-end;   
+}
+
+.footSocials ul{
     display: flex;
     flex-direction: column;
     list-style: none;
-    padding: 10px;
 }
 
 .contentContainer{
@@ -63,13 +65,19 @@ a{
     color: black;
 }
 
-footer{
+.footContainer{
     position: fixed;
     bottom: 0;
+    background-color: black;
+    width: 100%;
+    display:flex;
+    align-items: center;
+}
+
+.footContact{
+    flex:1;
     font-size: 1.3rem;
     text-align: center;
-    background-color: black;
-    width: 100vw;
 }
 
 footer a{
@@ -111,7 +119,7 @@ footer a:hover{
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: black;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; 
