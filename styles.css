@@ -6,6 +6,7 @@
 
 html{
     font-size: 3vh;
+    scroll-padding-top: 255px; /* height of sticky header */
 }
 
 body{
@@ -40,9 +41,12 @@ body{
     flex: 1;    
 }
 
+#intro{
+    margin-top: 260px;
+}
+
 .mainContent{
     height: 500px;
-    margin-top: 255px;
 }
 
 .footSocials{
@@ -163,7 +167,8 @@ footer a:hover{
 }
 
 @media screen and (max-width: 415px) {
-    .headTitle img{width: 200px; height: auto;}
+    .headTitle img{width: 300px; height: auto;}
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+    html {scroll-padding-top: 215px;}
 }
