@@ -5,7 +5,7 @@
 }
 
 html{
-    font-size: 2vh;
+    font-size: 3vh;
 }
 
 body{
@@ -13,13 +13,14 @@ body{
     background-color: black;
     color: white;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
     font-family:  'Gill Sans', Impact, sans-serif;
 }
 
 .holder{
     position: fixed;
     top: 0;
+    width: 100%;
 }
 
 .header{
@@ -27,17 +28,21 @@ body{
     justify-content: center;
     align-items: center;
     background-color: black;
-    width: 100vw;
     padding: 20px;
 }
 
 .headTitle img{
-    width: 300px;
+    width: 400px;
     height: auto;
 }
 
 .headTitle{
     flex: 1;    
+}
+
+.mainContent{
+    height: 500px;
+    margin-top: 255px;
 }
 
 .footSocials{
@@ -49,15 +54,6 @@ body{
     display: flex;
     flex-direction: column;
     list-style: none;
-}
-
-.contentContainer{
-    margin-top: 210px;
-}
-
-.content{
-    height: 100%;
-    width: 100%;
 }
 
 a{
@@ -76,7 +72,7 @@ a{
 
 .footContact{
     flex:1;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -130,7 +126,7 @@ footer a:hover{
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: white;
     display: block;
     transition: 0.3s;
